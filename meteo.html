@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Meteo App</title>
+</head>
+<body class="meteo-app ">
+    <div class="vertical-center">
+        <div class="container main-container mt-5 shadow-lg">
+            <div class="row">
+                <!-- COLUNA ESQUERDA -->
+                <div class="col-3 right-col py-4 text-center">
+                    <h1 id="city-name" class="fs-3 fw-bold">Macedo de Cavaleiros</h1>
+                    <p id="description" class="desc">Parcialmente Nublado</p>
+                    <img id="icon" src="https://openweathermap.org/img/wn/02d@2x.png" alt="" class="w-60">
+                    <div id="temperatura" class="fs-1 fw-bold">30 ºC</div>
+                    <div id="frase" class="fw-bold">parece 29 ºC</div>
+                </div>
+                <!-- COLUNA DIREITA -->
+                <div class="col-9 left-col p-4">
+                    <!-- HEADER DIREITA -->
+                    <div class="d-flex justify-content-between mb-3">
+                        <h4 id="date" class="day fw-bold desc">Sábado, 23/07</h4>
+                        <div class="bg-light">
+                            <input id="cityInput" class="text-center" type="text" placeholder="Pesquisar Cidades">
+                        </div>
+                        <button id="btn" class="btt px-4 mx-1 button">
+                            Search
+                        </button>
+                    </div>
+
+                    <!-- PRIMEIROS 3 CARTOES -->
+                    <div class="row">
+                        <div class="col-4 card">
+                            <p>Humidade</p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <img class="w-img" src="./assets/img/humidade.png" alt="imagem de uma gota">
+                                </div>
+                                <div class="col-6 fs-4">
+                                    <span id="humidade">75</span>      
+                                    <p class="fs-6 pt-2">%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 card">
+                            <p>Vento</p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <img class="w-img" src="./assets/img/vento.png" alt="imagem de vento">
+                                </div>
+                                <div class="col-6 fs-4">
+                                    <span id="vento">4.63</span>
+                                    <p class="fs-6 pt-2">%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 card">
+                            <p>Direçao Vento</p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <img class="w-img" src="./assets/img/bussola.png" alt="imagem de bussola">
+                                </div>
+                                <div id="vento-dir" class="col-6 fs-5">
+                                    SSE
+                                    <!-- <p class="fs-6 pt-2">%</p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SEGUNDOS 3 CARTOES -->
+                    <div class="row">
+                        <div class="col-4 card2">
+                            <p>Visibilidade</p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <img class="w-img2" src="./assets/img/binocolos.png" alt="imagem de uma gota">
+                                </div>
+                                <div class="col-6 fs-4">
+                                    <span id="visibilidade">10</span>   
+                                    <p class="fs-6 pt-1">km</p>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-4 card2">
+                            <p>Nascer do Sol</p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <img class="w-img2" src="./assets/img/nascersol.png" alt="imagem de uma gota">
+                                </div>
+                                <div id="sunrise" class="col-6 fs-4">
+                                    5:04
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-4 card2">
+                            <p>Por do Sol</p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <img class="w-img2" src="./assets/img/pordosol.png" alt="imagem de uma gota">
+                                </div>
+                                <div id="sunset" class="col-6 fs-4">
+                                    21:04
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <!-- texto DIREITO BUTTON -->
+                    <div class="row">
+                        <div class="col-9 text-end">
+                            <a class="clean metric ">Sistema métrico </a>
+                        </div>
+                        <div class="col-3">
+                            <a class="clean impe text-end ">Sistema imperial</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./src/js/appMeteo.js"></script>
+        <script src="https://kit.fontawesome.com/17b0eaef1e.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    </div>
+</body>
+</html>

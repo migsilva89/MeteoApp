@@ -1,0 +1,196 @@
+.ex1 .container {
+  background-color: green;
+}
+.ex1 .container.margem-conteudo {
+  padding: 50px;
+}
+.ex1 .container .btn {
+  width: 300px;
+}
+.ex1 .container .btn-esq {
+  text-align: left;
+  background-color: #7749F8;
+}
+.ex1 .container .btn-esq:hover {
+  background-color: yellow;
+}
+.ex1 .container .btn-esq:active {
+  background-color: purple;
+}
+.ex1 .container .btn-drt {
+  border-radius: 25px;
+  background-color: #082692;
+}
+.ex1 .container .btn-drt:hover {
+  background-color: #0A6BDD;
+}
+.ex1 .container .btn-drt:active {
+  background-color: #1D88C3;
+}
+
+.ex2 .container {
+  background-color: red;
+}
+
+.aula02 .aula02-espacamento {
+  width: 20vw;
+  padding-top: 20vh;
+  margin: auto;
+}
+.aula02 .aula02-espacamento button {
+  color: #fff;
+  border-radius: 20px;
+  padding: 0.5rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  margin: 20px;
+  flex-direction: row;
+  display: flex;
+}
+.aula02 .aula02-espacamento button:hover {
+  background-color: yellow;
+  color: black;
+}
+.aula02 .aula02-espacamento .btn1 {
+  background-color: #082692;
+}
+.aula02 .aula02-espacamento .btn2 {
+  background-color: #4201FA;
+}
+.aula02 .aula02-espacamento .btn3 {
+  background-color: #920873;
+}
+.aula02 .aula02-espacamento .btn4 {
+  background-color: #3C9208;
+}
+.aula02 .aula02-espacamento .btn5 {
+  background-color: #DD0A0A;
+}
+.aula02 .aula02-espacamento .btn6 {
+  background-color: #1D88C3;
+}
+
+body {
+  background-image: linear-gradient(to right, rgba(222, 30, 64, 0.2), rgba(34, 78, 75, 0.2));
+}
+
+.meteo-app .main-container {
+  background-color: rgb(231, 214, 198);
+  max-width: 810px;
+  height: 400px;
+  border-radius: 20px;
+}
+.meteo-app .desc {
+  text-transform: capitalize;
+}
+.meteo-app .right-col {
+  background-color: white;
+  height: 400px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.meteo-app input {
+  all: unset;
+  margin-right: 15px;
+}
+.meteo-app .clean {
+  text-decoration: none;
+  cursor: pointer;
+}
+.meteo-app .impe {
+  color: rgb(37, 37, 37);
+}
+.meteo-app .impe:hover {
+  color: white;
+}
+.meteo-app .metric {
+  color: green;
+}
+.meteo-app .metric:hover {
+  color: white;
+}
+.meteo-app button {
+  all: unset;
+}
+.meteo-app .btt {
+  height: 33px;
+  border-radius: 20px;
+  display: flex;
+  margin-top: 5px;
+  background-color: white;
+  color: gray;
+  align-items: center;
+}
+.meteo-app .btt:hover {
+  background-color: green;
+  color: white;
+}
+.meteo-app .bg-light {
+  height: 33px;
+  border-radius: 20px;
+  display: flex;
+  margin-top: 5px;
+}
+.meteo-app .day {
+  font-size: 18px;
+  padding-top: 9px;
+}
+.meteo-app .card {
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+  max-width: 174px;
+  height: 139px;
+  border-radius: 20px;
+  border: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: right;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.meteo-app .w-img {
+  width: 140%;
+}
+.meteo-app .card2 {
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+  max-width: 174px;
+  height: 103px;
+  border-radius: 20px;
+  border: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: right;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.meteo-app .w-img2 {
+  width: 100%;
+}
+.meteo-app .w-60 {
+  width: 60%;
+}
+.meteo-app .vertical-center {
+  min-height: 100%; /* Fallback for browsers do NOT support vh unit */
+  min-height: 80vh; /* These two lines are counted as one :-)       */
+  display: flex;
+  align-items: center;
+}
+.meteo-app input:-webkit-autofill,
+.meteo-app input:-webkit-autofill:hover,
+.meteo-app input:-webkit-autofill:focus,
+.meteo-app input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  border-radius: 20px;
+  color: gray;
+}/*# sourceMappingURL=styles.css.map */

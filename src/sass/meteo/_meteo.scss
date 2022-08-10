@@ -1,0 +1,118 @@
+body {
+    background-image: linear-gradient(to right, rgba(222, 30, 64, 0.2),  rgba(34, 78, 75, 0.2) );
+}
+
+.meteo-app{
+
+    .main-container{
+        background-color:$cor-bg-container;
+        max-width: 810px;
+        height:400px;     
+        border-radius: 20px;
+    }
+
+    .desc{
+        text-transform: capitalize;
+    }
+
+    .right-col{
+        background-color:white;
+        height:400px; 
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    input {
+        all: unset;
+        margin-right: 15px;
+    }
+
+    .clean{
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .impe{
+        color: rgb(37, 37, 37);
+    }
+
+    .impe:hover{
+        color: white;
+    }
+
+    .metric{
+        color:green;
+    }
+    
+    .metric:hover{
+        color:white;
+    }
+
+    button {
+        all: unset;
+    }
+
+    .btt{
+        height:33px;
+        border-radius: 20px;
+        display:flex;
+        margin-top:5px;
+        background-color:white;
+        color: gray;
+        align-items: center;
+    }
+
+    .btt:hover{
+        background-color:green;
+        color:white;
+    }
+
+    .bg-light {
+        height:33px;
+        border-radius: 20px;
+        display:flex;
+        margin-top:5px;
+    }
+
+    .day{
+        font-size:18px;
+        padding-top:9px;
+    }
+
+    .card{
+        @include card;
+    }
+
+    .w-img{
+        @include w-img;
+    }
+
+    .card2{
+        @include card2;
+    }
+
+    .w-img2{
+        width:100%;
+    }
+
+    .w-60{
+        width:60%;
+    }
+
+    .vertical-center {
+        min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+        min-height: 80vh; /* These two lines are counted as one :-)       */
+        display: flex;
+        align-items: center;
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus, 
+    input:-webkit-autofill:active{
+        -webkit-box-shadow: 0 0 0 30px white inset !important;
+        border-radius: 20px;
+        color:gray;
+    }
+}
+

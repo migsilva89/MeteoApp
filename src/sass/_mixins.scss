@@ -1,0 +1,56 @@
+@mixin button {
+  color: #fff;
+  border-radius: 20px;
+  padding:0.5rem;
+  padding-left:4rem;
+  padding-right:4rem;
+  margin:20px;
+  flex-direction: row;
+  display:flex;
+}
+
+@mixin card {
+  background-color: white;
+  padding:10px;
+  margin:10px;
+  max-width: 174px;
+  height:139px;
+  border-radius: 20px;
+  border:none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: right;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+@mixin card2 {
+  background-color: white;
+  padding:10px;
+  margin:10px;
+  max-width: 174px;
+  height:103px;
+  border-radius: 20px;
+  border:none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: right;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+@mixin w-img{
+  width:140%;
+}
+
+
+
+
